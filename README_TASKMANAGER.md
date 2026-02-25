@@ -67,12 +67,12 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-5. Configure database in `.env`:
+5. Configure database in `.env` (it's best to create a dedicated database for this project):
 ```
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-DB_DATABASE=postgres
+DB_DATABASE=taskmanager_db   # create this database using pgAdmin or psql
 DB_USERNAME=postgres
 DB_PASSWORD=postgres123
 ```
